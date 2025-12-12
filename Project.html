@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Background + layout */
+.projects-section {
+    background: linear-gradient(to right, #1a1a1d, #2c2c2f);
+    padding: 60px 40px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* Year text in background style */
+.year-text {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 80px;
+    font-weight: 700;
+    opacity: 0.15;
+    background: linear-gradient(to right, #999, #4bc0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* Project Cards Layout */
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: #4bc0ff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 80%;
+    }
+    .year-text {
+        font-size: 50px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="projects-section">
+    
+    <h2 class="section-title">SELECTED PROJECT</h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="https://d1ss4nmhr4m5he.cloudfront.net/wp-content/uploads/2025/03/04055727/10-Best-Hotel-Reservation-Software-Tools-in-2025-1024x536.jpg" alt="Project 1">
+            <h3>Hotel Booking System</h3>
+            <p>A Hotel Booking System is a web/mobile application that allows customers to search for hotels,
+                 check availability, book rooms, make payments, manage reservations, and receive confirmations. Staff and administrators can manage hotels, rooms, pricing, bookings, and reporting.
+                  The system supports single hotels or multiple properties (chain mode).</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="https://img.freepik.com/free-photo/assortment-cinema-elements-red-background-with-copy-space_23-2148457848.jpg?semt=ais_hybrid&w=740&q=80" alt="Project 2">
+            <h3>MovieZon</h3>
+            <p>A Movie Website is an online platform where users can explore information about movies, web series, actors, trailers, ratings, and reviews. 
+                The system provides a rich visual experience with posters, categories, and search features. Users can browse trending movies. The platform can be static (for display) or dynamic (with database + API integration).</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="https://img.freepik.com/premium-photo/closeup-person-typing-laptop-with-cybersecurity-lock-icon-overlay_670147-112008.jpg?w=360" alt="Project 3">
+            <h3>Student Portal</h3>
+            <p>Student Portal is a web-based system designed to provide students with a centralized platform where they can access all academic information, learning resources, personal details, results, notices.
+                 It simplifies the interaction between student and administration by bringing all academic activities into one dashboard.</p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
